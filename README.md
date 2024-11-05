@@ -13,7 +13,7 @@ Uso
 
 Abaixo está um exemplo de como usar o Pulse Database em seu projeto:
 
-Exemplo
+```javascript
 
 // Importa a classe Pulse
 import Pulse from 'pulse-database';
@@ -34,17 +34,24 @@ db.remove('name');
 // Verifica se o valor foi removido
 const deletedName = db.get('name');
 console.log(deletedName); // Saída: null
+```
 
-Métodos Disponíveis
+## Métodos Disponíveis
 
+```javascript
 put(key: string, value: any): void
 
-Adiciona ou atualiza um valor no banco de dados. Lança um erro se o valor for undefined.
+// Adiciona ou atualiza um valor no banco de dados. Lança um erro se o valor for undefined.
+```
 
+```javascript
 get(key: string): void | null
 
 Retorna o valor associado à chave especificada, ou null se a chave não existir.
+```
 
+```javascript
 remove(key: string): void
 
 Remove o valor associado à chave especificada do banco de dados.
+```
