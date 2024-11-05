@@ -47,11 +47,11 @@ put(key: string, value: any): void
 ```javascript
 get(key: string): void | null
 
-Retorna o valor associado à chave especificada, ou null se a chave não existir.
+// Retorna o valor associado à chave especificada, ou null se a chave não existir.
 ```
 
 ```javascript
 remove(key: string): void
 
-Remove o valor associado à chave especificada do banco de dados.
+// Remove o valor associado à chave especificada do banco de dados.
 ```
