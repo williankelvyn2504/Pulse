@@ -1,0 +1,17 @@
+{
+  "name": "pulse-database",
+  "version": "1.0.4",
+  "main": "build/database.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Willian Kelvyn",
+  "license": "ISC",
+  "description": "A simple database with key and value.",
+  "devDependencies": {
+    "@types/node": "^22.8.7",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
