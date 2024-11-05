@@ -8,7 +8,7 @@ Você pode instalar o Pulse Database usando o npm:
 
 ```bash
 npm install pulse-database
-
+```
 Uso
 
 Abaixo está um exemplo de como usar o Pulse Database em seu projeto:
