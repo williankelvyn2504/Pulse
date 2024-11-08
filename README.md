@@ -1,57 +1,57 @@
 # Pulse Database
 
-Pulse Database é uma biblioteca simples para gerenciar um banco de dados em formato chave-valor, utilizando arquivos JSON para persistência de dados. Ideal para aplicações que requerem armazenamento leve e fácil acesso.
+Pulse Database is a simple library for managing a key-value database, using JSON files for data persistence. It is ideal for applications that require lightweight storage and easy access.
 
-## Instalação
+## Installation
 
-Você pode instalar o Pulse Database usando o npm:
+You can install Pulse Database using npm:
 
 ```bash
 npm install pulse-database
 ```
-Uso
 
-Abaixo está um exemplo de como usar o Pulse Database em seu projeto:
+## Usage
+
+- Below is an example of how to use Pulse Database in your project:
 
 ```javascript
-
-// Importa a classe Pulse
+// Import the Pulse class
 import Pulse from 'pulse-database';
 
-// Cria uma nova instância da Pulse Database
+// Create a new instance of Pulse Database
 const db = new Pulse('./test.json');
 
-// Adiciona um valor ao banco de dados
+// Add a value to the database
 db.put('name', 'Gabriel');
 
-// Recupera um valor do banco de dados
+// Retrieve a value from the database
 const name = db.get('name');
-console.log(name); // Saída: Gabriel
+console.log(name); // Output: Gabriel
 
-// Remove um valor do banco de dados
+// Remove a value from the database
 db.remove('name');
 
-// Verifica se o valor foi removido
+// Check if the value has been removed
 const deletedName = db.get('name');
-console.log(deletedName); // Saída: null
+console.log(deletedName); // Output: null
 ```
 
-## Métodos Disponíveis
+## Available Methods
 
 ```javascript
 put(key: string, value: any): void
 
-// Adiciona ou atualiza um valor no banco de dados. Lança um erro se o valor for undefined.
+// Adds or updates a value in the database. Throws an error if the value is undefined.
 ```
 
 ```javascript
 get(key: string): void | null
 
-// Retorna o valor associado à chave especificada, ou null se a chave não existir.
+// Returns the value associated with the specified key, or null if the key doesn't exist.
 ```
 
 ```javascript
 remove(key: string): void
 
-// Remove o valor associado à chave especificada do banco de dados.
+// Removes the value associated with the specified key from the database.
 ```
